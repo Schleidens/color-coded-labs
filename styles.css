@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 10px;
+
+  color: #fff;
+  background-color: rgb(72, 72, 72);
+}
+
+.navbar > h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar > nav > ul {
+  list-style: none;
+
+  display: flex;
+  gap: 10px;
+
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  /* customize the btn icon */
+  button#navbarActionBtn {
+    padding: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  button#navbarActionBtn > div.icon-hamburger {
+    height: 4px;
+    width: 30px;
+
+    background-color: #000;
+  }
+}
+
+@media (min-width: 768px) {
+  button#navbarActionBtn {
+    display: none;
+  }
+}
+
+.active {
+  display: flex !important;
+}
+
+/* button#navbarActionBtn > div.icon-hamburger::before {
+  height: 4px;
+  width: 30px;
+
+  background-color: #000;
+
+  position: absolute;
+
+  bottom: 50px;
+} */
+
+/* the main part css */
+
+main > section.space {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main > section.space#section1 {
+  background-color: #d95d5d;
+}
+
+main > section.space#section2 {
+  background-color: #86d95d;
+}
+
+main > section.space#section3 {
+  background-color: #5d95d9;
+}
+
+main > section.space#section4 {
+  background-color: #cb5dd9;
+}
+
+/* scroll to top btn */
+
+main > button#scrollToTopBtn {
+  position: fixed;
+
+  bottom: 20px;
+  right: 20px;
+}
