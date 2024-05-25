@@ -30,16 +30,3 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollToTopBtn.style.backgroundColor = 'pink';
   });
 });
-
-let placeholder = false;
-const myFunc = async () => {
-  try {
-    placeholder = true;
-
-    // lorem
-
-    placeholder = false;
-  } catch (error) {
-    console.log(error);
-  }
-};
